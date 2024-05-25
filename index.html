@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDT</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/pngwing.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="shapka">
+            <h1>TDT</h1>
+            <nav>
+                <ul class="bar">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#wristwatches">Наручные часы</a></li>
+                    <li><a href="#wallclocks">Настенные часы</a></li>
+                    <li><a href="#deskclocks">Настольные часы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="nav-b">
+                <button id="cartButton"><img class="cartee" src="img/playboycartee.png" alt=""><span id="cartCount" class="cart-count">0</span></button>
+                <!-- HTML код корзины -->
+                <div id="cartDropdown" class="hidden">
+                    <h2>Корзина</h2>
+                    <div id="cartItems"></div>
+                    <p id="cartTotal">Общая сумма: 0.00 ₽</p>
+                    <button id="checkoutButton">Оформить заказ</button>
+                </div>
+                <button id="acc"><img class="acc" src="img/acc.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="cool">
+            <div class="slider-background">
+                <div class="slide" style="background-image: url('img/rest1.jpg');"></div>
+                <div class="slide" style="background-image: url('img/rest2.jpg');"></div>
+                <div class="slide" style="background-image: url('img/rest3.jpg');"></div>
+            </div>
+            <div class="quote">
+                <h2>Time Defines Trust - Время Строит Доверие</h2>
+                <blockquote>
+                    <p>«Время — это мимолетный взгляд звезды в ночном небе, окутывающий нас загадочной красотой. Часы напоминают о ценности каждого мгновения и важности замечать уникальные моменты жизни.»</p>
+                    <cite>&copy;Стейтем</cite>
+                    <a href="#wristwatches"><button class="podobrat">Подобрать часы</button></a>
+                </blockquote>
+            </div>
+            <div id="home" class="home-section">
+                <div id="clockContainer">
+                    <div id="hour"></div>
+                    <div id="minute"></div>
+                    <div id="second"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contents">
+            <div class="row" id="wristwatches">
+                <h2>Наручные часы</h2>
+                <div class="slider">
+                    <div class="slider-con">
+                    <button class="prev">&#8249</button>
+                    <div class="cards">
+                        <div class="card" data-name="Часы A" data-description="Описание часов A" data-price="5000" data-image="img/wr1.png">
+                            <img class="card_img" src="img/wr1.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>5000 р.</p>
+                        </div>
+                        <div class="card" data-name="Часы B" data-description="Описание часов B" data-price="6000" data-image="img/wr2.png">
+                            <img class="card_img" src="img/wr2.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>6000 р.</p>
+                        </div>
+                        <div class="card" data-name="Часы C" data-description="Описание часов C" data-price="7000" data-image="img/wr3.png">
+                            <img class="card_img" src="img/wr3.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>7000 р.</p>
+                        </div>
+                        <div class="card" data-name="Часы D" data-description="Описание часов D" data-price="8000" data-image="img/wr4.png">
+                            <img class="card_img" src="img/wr4.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>8000 р.</p>
+                        </div>
+                        <div class="card" data-name="Часы test" data-description="Описание часов test" data-price="8765" data-image="img/wr5.png">
+                            <img class="card_img" src="img/wr5.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>8765 р.</p>
+                        </div>
+                        <div class="card" data-name="Часы test" data-description="Описание часов test" data-price="8765" data-image="img/wr6.png">
+                            <img class="card_img" src="img/wr6.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>81231 р.</p>
+                        </div>
+                        <div class="card" data-name="Часы test" data-description="Описание часов test" data-price="8765 руб" data-image="img/wr6.png">
+                            <img class="card_img" src="img/wr7.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>81211 р.</p>
+                        </div>
+                        <div class="card" data-name="Часы test" data-description="Описание часов test" data-price="8765" data-image="img/wr6.png">
+                            <img class="card_img" src="img/wr8.png" alt="">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>123121 р.</p>
+                        </div>
+                    </div>
+                    <button class="next">&#8250</button>
+                </div>
+                </div>
+            </div>
+            <div class="row" id="wallclocks">
+                <h2>Настенные часы</h2>
+                <div class="slider">
+                    <div class="slider-con">
+                    <button class="prev">&#8249</button>
+                        <div class="cards">
+                            <div class="card" data-name="Часы E" data-description="Описание часов E" data-price="9000" data-image="img/wa1.png">
+                                <img class="card_img" src="img/wa1.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>9000 р.</p>
+                            </div>
+                            <div class="card" data-name="Часы F" data-description="Описание часов F" data-price="10000" data-image="img/wa2.png">
+                                <img class="card_img" src="img/wa2.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>10000 р.</p>
+                            </div>
+                            <div class="card" data-name="Часы G" data-description="Описание часов G" data-price="11000" data-image="img/wa3.png">
+                                <img class="card_img" src="img/wa3.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>11000 р.</p>
+                            </div>
+                            <div class="card" data-name="Часы H" data-description="Описание часов H" data-price="12000" data-image="img/wa4.png">
+                                <img class="card_img" src="img/wa4.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>12000 р.</p>
+                            </div>
+                        </div>
+                        <button class="next">&#8250</button>
+                    </div>
+            </div>
+            <div class="row" id="deskclocks">
+                <h2>Настольные часы</h2>
+                <div class="slider">
+                    <div class="slider-con">
+                    <button class="prev">&#8249</button>
+                        <div class="cards">
+                            <div class="card" data-name="Часы I" data-description="Описание часов I" data-price="13000" data-image="img/ta1.png">
+                                <img class="card_img" src="img/ta1.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>13000 р.</p>
+                            </div>
+                            <div class="card" data-name="Часы J" data-description="Описание часов J" data-price="14000" data-image="img/ta2.png">
+                                <img class="card_img" src="img/ta2.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>14000 р.</p>
+                            </div>
+
+                            <div class="card" data-name="Часы K" data-description="Описание часов K" data-price="15000" data-image="img/ta3.png">
+                                <img class="card_img" src="img/ta3.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>15000 р.</p>
+                            </div>
+                            <div class="card" data-name="Часы L" data-description="Описание часов L" data-price="16000" data-image="img/ta4.png">
+                                <img class="card_img" src="img/ta4.png" alt="">
+                                <h3>Lorem, ipsum.</h3>
+                                <p>16000 р.</p>
+                            </div>
+                        </div>
+                        <button class="next">&#8250</button>
+                    </div>  
+
+            </div>
+        </section>
+        <section class="con">
+            <h2>Контакты</h2>
+            <div class="cons" id="contacts">
+                <div class="shogunat">
+                    <div class="image-container">
+                        <img class="ronin" src="img/ronin.jpg" alt="Ronin">
+                        <img class="ronin-hover" src="img/wr1.png" alt="Tupo Ya">
+                    </div>
+                    <p align="center" id="contact-text">Все вопросы к этому молодому (сомнительно) человеку (не менее сомнительно)</p>
+                </div>
+                <div class="kontakt">
+                    <div class="form-box">
+                        <input type="text" id="imya" name="imya" placeholder="Ваше имя...">
+                    </div>
+                    <div class="form-box">
+                        <input type="text" id="familiya" name="familiya" placeholder="Ваша фамилия...">
+                    </div>
+                    <div class="form-box">
+                        <input type="email" id="milo" name="milo" placeholder="Ваша почта...">
+                    </div>
+                    <div class="form-box-l">
+                        <textarea id="text" name="text" placeholder="Опишите проблему..."></textarea>
+                    </div>
+                    <div class="form-box-b">
+                        <button id="submitButton">Отправить</button>
+                    </div>
+                    <p id="submitMessage" style="display:none;">Ваша заявка отправлена</p>
+                </div>
+            </div>
+            <div id="submitModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p>Ваша заявка отправлена</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="cb">
+                <span class="close-button">&times;</span>
+            </div>
+            <img id="modalImage" src="" alt="Product Image" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="purch">
+                <p id="modalPrice"></p>
+                <button class="modalbut">Купить</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                    <p>Email: info@tdtshop.ru</p>
+                    <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Следите за нами</h4>
+                    <ul class="social-media">
+                        <li><a href="#"><img class="links" src="img/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img class="links" src="img/insta.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img class="links" src="img/tweet.png" alt="Twitter"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                        <li><a href="#">Политика<br> конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TDT Магазин часов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
